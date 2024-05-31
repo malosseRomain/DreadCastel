@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6357388816957286092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6244982284940895418}
+  - component: {fileID: 67093374934103860}
+  - component: {fileID: 7881891451973951694}
+  m_Layer: 0
+  m_Name: ProceduralRoomSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6244982284940895418
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6357388816957286092}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &67093374934103860
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6357388816957286092}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2, y: 1.2, z: 1.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7881891451973951694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6357388816957286092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2601ae8376c2669409ac7ab2f593dc17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Player
+  roomSet:
+  - prefab: {fileID: 3843757688143095803, guid: 13eecf40153f5ef439152832a399679f, type: 3}
+    puzzle: []
+    z_offset: 70
+    scale: {x: 70, y: 0, z: 70}
+  - prefab: {fileID: 5734618344036445325, guid: cf630ec6633886847802e30a22b30ccf, type: 3}
+    puzzle:
+    - {fileID: 7304258047467061085, guid: 85d5a6686fe60114d8775751b31f7e86, type: 3}
+    - {fileID: 8787606806388356064, guid: c26b0fcf9c1e54d42855304726e91d2d, type: 3}
+    z_offset: 70
+    scale: {x: 70, y: 0, z: 70}
+  - prefab: {fileID: 7403343454594626585, guid: b141e068e85c9f14292f71209993e440, type: 3}
+    puzzle: []
+    z_offset: 70
+    scale: {x: 140, y: 0, z: 70}
+  - prefab: {fileID: 1669677365725595233, guid: 2b1cb7baa46a5ef498d614dbe578b70c, type: 3}
+    puzzle: []
+    z_offset: 105
+    scale: {x: 70, y: 0, z: 140}
